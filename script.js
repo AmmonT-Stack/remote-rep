@@ -833,11 +833,11 @@ function setupButtons() {
     const category = categories[cat];
     document.getElementById(category.nextBtn).addEventListener("click", () => {
       category.index = (category.index + 1) % category.images.length;
-      updateImage(cat)
+      updateImage(cat);
     });
     document.getElementById(category.prevBtn).addEventListener("click", () => {
       category.index =
-        (category.index - 1 + category.image.length) % category.images.length;
+        (category.index - 1 + category.images.length) % category.images.length;
       updateImage(cat);
     });
   }
@@ -848,7 +848,6 @@ function randomize() {
     category.index = Math.floor(Math.random() * category.images.length);
     updateImage(cat);
   }
-  createConfetti(Index);
 }
 document.getElementById("random-btn").addEventListener("click", randomize);
 
