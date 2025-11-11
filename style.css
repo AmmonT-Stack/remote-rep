@@ -64,7 +64,7 @@ html {
 }
 .weapons-image1,
 .weapons-container1 {
-  /* justify-content: colim; */
+  /* justify-content: column; */
   display: flex;
   max-height: 200px;
   object-fit: contain;
