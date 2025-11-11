@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Exo 2";
+  background: #131313;
+  font-size: 22px;
+  overflow-x: show;
+  background-image: url(/images/hud1.png),
+    url(/images/Halo\ 3\ Killionaire\ -\ Mint\ Blitz.gif);
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: #1ea2b3;
+  padding: 13px;
+  white-space: nowrap;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+a:before {
+  font-family: apple color emoji, segoe ui emoji, notocoloremoji,
+    segoe ui symbol, android emoji, emojisymbols, emojione mozilla;
+}
+
+.menu-item:first-of-type a {
+  border-radius: 13px 0 0 21px;
+}
+
+.menu-item:last-of-type a {
+  border-radius: 0 21px 13px 0;
+}
+
+.sub-menu .menu-item:first-of-type a {
+  border-radius: 13px 21px 0 0;
+}
+
+.sub-menu .menu-item:last-of-type a {
+  border-radius: 0 0 21px 13px;
+}
+
+nav {
+  max-width: 700px;
+  max-height: 700px;
+  display: flex;
+  align-items: flex-end;
+  animation: bounceIn 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 1 forwards;
+  animation-delay: 500ms;
+  transform-style: preserve-3d;
+  opacity: 0;
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scaleX(0.55) scaleY(0.89);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sub-menu {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  bottom: 50px;
+  transform: skewY(-5deg) scale(0.89) rotateX(-5deg) rotateZ(-3deg);
+}
+
+.sub-menu a {
+  font-size: 15px;
+}
+
+.menu-item {
+  position: relative;
+  display: inline-flex;
+}
+
+.menu-item:hover .sub-menu {
+  pointer-events: all;
+  animation: showBounce 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes showBounce {
+  100% {
+    opacity: 1;
+    transform: translateX(-21px) skewY(-5deg);
+  }
+}
+
+.sub-menu li {
+  display: flex;
+}
+
+.sub-menu a {
+  font-size: 22px;
+}
+
+.menu-item:nth-of-type(3) .sub-menu li:nth-of-type(2) a {
+  font-size: 22px;
+}
+
+.menu-item:nth-of-type(3) .sub-menu li:nth-of-type(3) a {
+  font-size: 22px;
+}
+
+.menu-item a {
+  position: relative;
+  text-align: center;
+}
+
+.menu-item a:before {
+  content: "";
+  display: block;
+  font-size: 34px;
+  transform: (-8deg);
+  margin-bottom: 5px;
+  transition: transform 189ms ease-out;
+}
+
+.menu-item a:hover:before {
+  animation: hoverEmoji 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes hoverEmoji {
+  0% {
+    transform: scaleX(0.89) rotateX(-21deg) rotateZ(-8deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
+
+.hover-effect1 {
+  width: 100vw; /* Set desired width */
+  height: 20vh; /* Set desired height */
+  background-image: 🌆; /* Initial background image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+}
+
+.hover-effect1:hover {
+  background-image: url("/images/city-cityscape.gif"); /* New background image on hover */
+}
+.hover-effect2 {
+  width: 100vw; /* Set desired width */
+  height: 20vh; /* Set desired height */
+  background-image: url(""); /* Initial background image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+.hover-effect2:hover {
+  background-image: url("/images/ssj-ss1.gif"); /* New background image on hover */
+}
+.hover-effect3 {
+  width: 100vw; /* Set desired width */
+  height: 20vh; /* Set desired height */
+  background-image: url(""); /* Initial background image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.hover-effect3:hover {
+  background-image: url("/images/cat-fight-dog.gif"); /* New background image on hover */
+}
+.hover-effect4 {
+  width: 100vw; /* Set desired width */
+  height: 20vh; /* Set desired height */
+  background-image: url(""); /* Initial background image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.hover-effect4:hover {
+  background-image: url("/images/yugioh-cards.gif"); /* New background image on hover */
+}
+.hover-effect5 {
+  width: 100vw; /* Set desired width */
+  height: 20vh; /* Set desired height */
+  background-image: url(""); /* Initial background image */
+  background-size: cover; /* Adjust as needed */
+  background-position: center; /* Adjust as needed */
+  transition: background-image 0.5s ease-in-out; /* Smooth transition */
+}
+
+.hover-effect5:hover {
+  background-image: url("/images/midoriya-izuku-deku.gif"); /* New background image on hover */
+}

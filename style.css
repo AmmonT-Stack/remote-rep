@@ -1,0 +1,125 @@
+html {
+  background-size: cover;
+  /* display: flex; */
+  /* justify-content: center; */
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  /* overflow-x: hidden; */
+  body {
+    background-size: cover;
+    background-image: url(/images/images-removebg-preview.png),
+      url(/images/david-alsina-liurnia-png.jpg);
+  }
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+}
+
+/* .center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+  } */
+
+.addons-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 150px;
+  max-height: 150px;
+  padding: 10px;
+}
+
+.bottoms-container,
+.bottoms-image {
+  max-width: 150px;
+}
+
+.addons-image {
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 150px;
+  aspect-ratio: 3 / 4;
+  object-fit: contain;
+  height: auto;
+}
+
+.center-container {
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.weapons-image1,
+.weapons-container1 {
+  /* justify-content: colim; */
+  display: flex;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.weapons-image1 {
+  justify-content: center;
+  width: 90%;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.weapons-image2,
+.weapons-container2 {
+  justify-content: reverse;
+  display: flex reverse;
+  width: 90%;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.tops-container,
+.tops-image {
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  padding: 10px;
+}
+
+/*  */
+/* display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 15px;
+  width: 100%;
+  padding: 10px;
+} */
+
+/* button {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: white;
+  /* background-color: pink; */
+/* border: none;
+  padding: 8px 16px;
+  cursor: pointer; */
+
+/* button:hover {
+  background-color: red;
+}
+.random-button {
+  background-color: green;
+  font-family: serif;
+} */
